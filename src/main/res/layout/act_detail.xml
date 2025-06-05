@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/basic_color"
+    android:layout_margin="20dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nearby Hotels and Hospitals"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/fetch_places_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fetch Nearby Places"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Results will appear here..."
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/fetch_places_button" />
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gestureStrokeWidth="5"
+        android:layout_below="@id/resultTextView" />
+
+</RelativeLayout>

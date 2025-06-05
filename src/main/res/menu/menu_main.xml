@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/nav_alerts"
+        android:title="Live Alerts"
+        android:icon="@android:drawable/ic_menu_myplaces"/>
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@android:drawable/ic_menu_preferences"/>
+    <item
+        android:id="@+id/nav_sos"
+        android:title="SOS"
+        android:icon="@android:drawable/ic_lock_power_off"/>
+    <item
+        android:id="@+id/risk_zones"
+        android:title="Navigation"
+        android:icon="@android:drawable/ic_lock_power_off"/>
+    <item
+        android:id="@+id/nav_offline"
+        android:title="Offline Mode"
+        android:icon="@android:drawable/ic_lock_power_off"/>
+    <item
+        android:id="@+id/nav_help"
+        android:title="Help"
+       />
+
+</menu>

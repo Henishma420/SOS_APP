@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SOS">
+
+    <FrameLayout
+        android:id="@+id/map_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp" />
+    <TextView
+        android:id="@+id/sos_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency SOS"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Contact Name"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/contact_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/add_contact_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Contact"
+        android:backgroundTint="@color/basic_color"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved Emergency Contacts"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contacts_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/darker_gray"/>
+
+
+
+
+
+    <!-- Updated SOS button to send an emergency message dynamically -->
+    <Button
+        android:id="@+id/sos_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SOS - Send Emergency Alert"
+        android:textSize="18sp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

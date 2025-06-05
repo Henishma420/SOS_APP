@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TSafe</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+     <string name="topic">Smart Pedestrian Safety</string>
+    <string name="username">UserName</string>
+    <string name="pass">Password</string>
+    <string name="login">Login</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="welcome_to_smart_pedestrian_safety">Welcome to Smart Pedestrian Safety</string>
+
+</resources>
